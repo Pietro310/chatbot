@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chatbot Glok</title>
+    <link rel="stylesheet" href="style.css"> <!--Collegamento-->
+</head>
+<body>
+    <h1>Pagina di prova!</h1>
+    <p>Paragrafo di prova.</p>
+
+    <!--GLOK-->
+
+    <!-- icona pulsante -->
+    <div id="chat-bubble"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>
+    </div>
+    <!---->
+
+    <!-- finestra chat -->
+    <div id="chat-window" class="hidden"> 
+        <div class="chat-header">
+            <h3>Glock</h3>
+            <button id="chat-close-btn">&times;</button>
+        </div>
+        <div id="chat-body" class="chat-body">
+            <div class="message bot-message">
+                <p>Ciao! Come posso aiutarti oggi?</p>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Chiedi a Glock..." autocomplete="off">
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </div>
+    <!---->
+
+    <!--GLOK-->
+
+    <script src="script.js"></script>
+</body>
+</html>
